@@ -3,7 +3,6 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 import { fontBrico } from '@/components/fonts';
-import Navbar from '@/components/navbar/navbar';
 
 import type { ReactNode } from 'react';
 
@@ -18,7 +17,6 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
       <body
         className={`bg-background container text-white antialiased ${fontBrico.variable}`}
       >
-        <Navbar />
         {children}
       </body>
     </html>
